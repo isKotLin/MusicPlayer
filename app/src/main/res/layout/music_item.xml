@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    >
+
+
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:text="1"
+        android:textColor="@color/colorWhite"
+        android:textSize="18px"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/albumPhoto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="Album photo"
+        android:layout_marginLeft="25dp"
+        android:visibility="gone"
+        />
+    <!--TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10.0px"
+        android:text="1"
+        android:textAppearance="?android:textAppearanceMedium" /-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rank"
+        android:singleLine="true"
+        android:duplicateParentState="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_centerInParent="true"
+        android:text="Title"
+        android:textSize="18px"
+        android:paddingLeft="10dp"
+        android:textColor="#fff"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"/>
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:text="Artist"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv_item_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03:29"
+        android:textStyle="bold"
+        android:textSize="14px"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+    <ImageView
+        android:id="@+id/play_view"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+    <!--android:layout_alignBaseline="@+id/duration"-->
+</RelativeLayout>

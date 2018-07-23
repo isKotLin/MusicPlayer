@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WrMusic</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="scan_start">Scanning  </string>
+    <string name="scan_second">  s</string>
+    <string name="scan_end">End of scan, no music</string>
+    <string name="usb_insert">Refreshing</string>
+    <string name="usb_noMusic">No music</string>
+    <string name="app_exit">press again to exit program</string>
+    <string-array name="music_mode">
+        <item>Single Loop</item>
+        <item>List Loop</item>
+        <item>Random</item>
+        <item>Sequence</item>
+    </string-array>
+</resources>
