@@ -220,7 +220,9 @@ public class MainActivity extends Activity implements OnClickListener{
             @Override
             public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
                 AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-//                Log.v("lyj_ring", "mVoiceSeekBar max progress = "+arg1);
+                Log.v("lyj_ring", "mVoiceSeekBar max progress = "+arg1);
+
+                Log.v("lyj_ring", "mVoiceSeekBar max progress = "+arg1);
                 //系统音量和媒体音量同时更新
                 audioManager.setStreamVolume(AudioManager.STREAM_SYSTEM, arg1, 0);//广播给系统的
                 audioManager.setStreamVolume(3, arg1, 3);//  3 代表  AudioManager.STREAM_MUSIC  系统广播给seekbar
